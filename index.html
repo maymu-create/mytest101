@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <title>mynote</title>
   <header>
+  <body>
     <h1>My note</h1>
     <div style="margin-left:auto;display:flex;gap:8px;align-items: center;"> 
     <textarea id="noteInput" placeholder="พิมพ์โน้ตของคุณ..."></textarea><br>
     <button id="saveBtn">บันทึก</button>
-  </header>
-  <body>
     <div class="navbar">
         <button onclick="menu.hidden^=1"></button>
+        <div style="margin-left:auto;display:flex;gap:8px;align-items: end;"></div>
         <ul id="menu" hidden>
             <li>บัญชี</li>
             <li>เครื่องคิดเลข</li>
@@ -20,6 +20,7 @@
         </ul>
     </div>
   </body>
+  </header>
 
   <main class="container"></main>
 
@@ -38,13 +39,13 @@
         padding: 20px 25px;
         display: flex;
         justify-items: space-between;
+        align-items: center;
     }
     h1 {
         margin: 0;
         color: rgb(82, 58, 39);
         font-size: 50px;
-        cursor: pointer;
-        padding: 40px;
+        padding: 32px;
         text-align: start;
     }
     textarea {
