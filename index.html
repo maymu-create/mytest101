@@ -13,6 +13,8 @@
         background: rgb(255, 255, 231);
         width: 100%;
         padding: 20px;
+        display: flex;
+        justify-items: space-between;
     }
     h1 {
         color: rgb(82, 58, 39);
@@ -25,5 +27,13 @@
 <body>
     <h1>My note</h1>
     <textarea id="noteInput" placeholder="พิมพ์โน้ตของคุณ..."></textarea><br>
-    <button id="savebtn">บันทึก</button>
+    <button id="saveBtn">บันทึก</button>
 </body>
+
+<div id="notes"></div>
+
+<script>
+    const input=document.getElementById("noteInput")
+    const saveBtn=document.getElementById("saveBtn")
+    const noteDiv=document.getElementById("notes")
+</script>
