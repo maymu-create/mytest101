@@ -5,11 +5,13 @@
   <title>mynote</title>
 
   <main class="container"></main>
+
   <style>
     body {
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         text-align: center;
         background: rgb(255, 254, 248);
+        margin: 0;
         flex-direction: column;
     }
     header {
@@ -20,6 +22,7 @@
         justify-items: space-between;
     }
     h1 {
+        margin: 0;
         color: rgb(82, 58, 39);
         font-size: 50px;
         cursor: pointer;
@@ -27,10 +30,14 @@
         text-align: start;
     }
     textarea {
-        width: 600px;
+        width: 300px;
         height: 100px;
         padding: 10px;
         font-size: 18px;
+    }
+    .content {
+        margin-top: 30px;
+        text-align: center;
     }
   </style>
 </head>
