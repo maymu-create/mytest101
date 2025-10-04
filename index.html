@@ -3,6 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <title>mynote</title>
+  <header>
+    <h1>My note</h1>
+    <div style="margin-left:auto;display:flex;gap:8px;align-items: center;"> 
+    <textarea id="noteInput" placeholder="พิมพ์โน้ตของคุณ..."></textarea><br>
+    <button id="saveBtn">บันทึก</button>
+  </header>
+  <body>
+    <div class="navbar">
+        <button onclick="menu.hidden^=1"></button>
+        <ul id="menu" hidden>
+            <li>บัญชี</li>
+            <li>เครื่องคิดเลข</li>
+            <li>วาด</li>
+            <li>To Do List</li>
+        </ul>
+    </div>
+  </body>
 
   <main class="container"></main>
 
@@ -42,13 +59,6 @@
     }
   </style>
 </head>
-
-<body>
-    <h1>My note</h1>
-    <div style="margin-left:auto;display:flex;gap:8px;align-items: center;"> 
-    <textarea id="noteInput" placeholder="พิมพ์โน้ตของคุณ..."></textarea><br>
-    <button id="saveBtn">บันทึก</button>
-</body>
 
 <div id="notes"></div>
 
