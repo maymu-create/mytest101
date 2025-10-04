@@ -7,8 +7,6 @@
   <body>
     <h1>My note</h1>
     <div style="margin-left:auto;display:flex;gap:8px;align-items: center;"> 
-    <textarea id="noteInput" placeholder="พิมพ์โน้ตของคุณ..."></textarea><br>
-    <button id="saveBtn">บันทึก</button>
     <div class="navbar">
         <button onclick="menu.hidden^=1"></button>
         <div style="margin-left:auto;display:flex;gap:8px;align-items: end;"></div>
@@ -72,6 +70,9 @@
 </head>
 
 <div id="notes"></div>
+
+<textarea id="noteInput" placeholder="พิมพ์โน้ตของคุณ..."></textarea><br>
+    <button id="saveBtn">บันทึก</button>
 
 <script>
     const input=document.getElementById("noteInput")
